@@ -1,7 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  
+  if (license === 'MIT') {
+    return 'apm/1/vim-mode';
+  } else if (license === 'ISC') {
+    return '';
+  }
 }
 
 // TODO: Create a function that returns the license link
@@ -38,7 +42,11 @@ function generateMarkdown(data) {
   ${data.license}
 
   ## Questions
-  If you have any questions, please contact me at: ${data.username}
+  If you have any questions, please contact me at: 
+  - GitHub: [@${data.username}](https://github.com/${data.username})
+  - Email: [@email me](${data.email})
+
+
 
   ## Badges
   

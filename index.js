@@ -31,7 +31,7 @@ const questions = [
     {
         type: 'input',
         name: 'credits',
-        message: 'List any contributor for the project: ',
+        message: 'List any contributor for the project:',
         // validate: 
     },
     {
@@ -50,12 +50,12 @@ const questions = [
     {
         type: 'input',
         name: 'username',
-        message: 'Enter your GitHub username: ',
+        message: 'Enter your GitHub username:',
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email: ',
+        message: 'Enter your email:',
     },
 ];
 
