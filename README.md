@@ -6,14 +6,18 @@
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Demo](#demo)
   - [Credits](#credits)
-  - [License](#lincense)
+  - [License](#license)
 
   ## Installation
   Clone the repository to local, install necessary dependencies with following command: ```npm install``` . Then run the command: ```node index.js``` to invoke the application.
 
   ## Usage
   To generate README.md file for your repository.
+  
+  ## Demo
+  https://user-images.githubusercontent.com/90424035/172962052-845c4079-49e7-4bb0-8ea4-cd6c1839ab59.mp4
 
   ## Credits
   
