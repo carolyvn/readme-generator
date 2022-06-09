@@ -42,16 +42,14 @@ function generateMarkdown(data) {
   ${data.credits}
 
   ## License
-  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+  ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
 
   ## Questions
-  ${data.questions}
   If you have any questions, please contact me at: 
   - GitHub: [@${data.username}](https://github.com/${data.username})
   - Email: [@email me](${data.email})
 
-  
-  
+
 `;
 }
 
