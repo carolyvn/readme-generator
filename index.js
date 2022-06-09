@@ -20,19 +20,16 @@ const questions = [
         type: 'input',
         name: 'installation',
         message: 'Describe any installation needed for the project.',
-
     },
     {
         type: 'input',
         name: 'usage',
         message: 'What is the project usage for?',
-
     },
     {
         type: 'input',
         name: 'credits',
         message: 'List any contributor for the project:',
-        // validate: 
     },
     {
         type: 'list',
@@ -57,6 +54,11 @@ const questions = [
         name: 'email',
         message: 'Enter your email:',
     },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Any questions?'
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -77,7 +79,8 @@ const writeFileAsync = util.promisify(writeToFile);
 async function init() {
     try {
         const data = await inquirer.prompt(questions);
-        writeToFile('README.md', generateMarkdown(data));
+        await writeFileAsync('./dist/README.md', generateMarkdown(data));
+        console.log('README.md successfully created!')
     } catch(err) {
         console.log(err);
     }
